@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marina Mart — Гардероб</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="container">
+  <a href="index.html" class="logo">marina mart <span>✦ гардероб</span></a>
+  <nav>
+    <a href="index.html" class="active">Главная</a>
+    <a href="garderob.html">Гардероб</a>
+    <a href="obrazy.html">Образы</a>
+    <a href="wishlist.html">Вишлист</a>
+    <a href="rules.html">Правила</a>
+  </nav>
+</div></header>
+
+<div class="container">
+  <div class="hero">
+    <h1>Marina Mart</h1>
+    <p>Персональный электронный гардероб. Твои вещи, твои образы, твой стиль — собранные в одном месте.</p>
+  </div>
+
+  <div class="stats" id="stats">
+    <div class="stat-card"><div class="num" data-count="all">—</div><div class="label">Всего вещей</div></div>
+    <div class="stat-card"><div class="num" data-count="daily">—</div><div class="label">Ежедневная одежда</div></div>
+    <div class="stat-card"><div class="num" data-count="outerwear">—</div><div class="label">Верхняя одежда</div></div>
+    <div class="stat-card"><div class="num" data-count="shoes">—</div><div class="label">Обувь</div></div>
+    <div class="stat-card"><div class="num" data-count="bags">—</div><div class="label">Сумки</div></div>
+    <div class="stat-card"><div class="num" data-count="accessories">—</div><div class="label">Аксессуары</div></div>
+  </div>
+
+  <div class="section">
+    <h2>✨ Обо мне</h2>
+    <div class="card" style="padding:20px;font-size:15px;line-height:1.7">
+      <p><strong>Фигура:</strong> Перевёрнутый треугольник (плечи 113 >> бёдра 92).<br>
+      <strong>Цветотип:</strong> Тёплая палитра, золотистый подтон. Землистые тона, изумруд, жёлтый.<br>
+      <strong>Стиль:</strong> Cozy autumn oversize + wide-leg + многослойность. Небрежный young mass-market.<br>
+      <strong>Металл:</strong> Золото.<br>
+      <strong>Главная формула:</strong> Объёмный низ + подчёркнутая талия + смягчённые плечи.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📸 Референсы (moodboard)</h2>
+    <p style="font-size:14px;color:var(--muted)">Твой Pinterest-вайб: cozy autumn, old money, oversize + wide-leg. 16 + 12 новых фото.</p>
+    <div class="card-grid c4" id="references"></div>
+    <script>
+    setTimeout(()=>{
+      const d=document.getElementById('references');
+      const names=['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16'];
+      names.forEach(n=>{
+        const img=document.createElement('img');
+        img.src='img/references/ref1_'+n+'.jfif';
+        img.style.width='100%';img.style.aspectRatio='0.7';img.style.objectFit='cover';img.style.borderRadius='8px';img.style.background='#eee';
+        img.onerror=()=>{img.style.display='none'};
+        img.alt='Референс '+n;
+        d.appendChild(img);
+      });
+      for(let i=1;i<=12;i++){
+        const img=document.createElement('img');
+        img.src='img/references/ref2_'+i+'.jfif';
+        img.style.width='100%';img.style.aspectRatio='0.7';img.style.objectFit='cover';img.style.borderRadius='8px';img.style.background='#eee';
+        img.onerror=()=>{img.style.display='none'};
+        img.alt='Референс новый '+i;
+        d.appendChild(img);
+      }
+    },500);
+    </script>
+  </div>
+
+  <div class="section">
+    <h2>🎯 Быстрые ссылки</h2>
+    <div class="card-grid c3">
+      <a href="garderob.html" class="card" style="text-align:center;padding:24px;font-size:16px;font-weight:600">👗 Весь гардероб →</a>
+      <a href="obrazy.html" class="card" style="text-align:center;padding:24px;font-size:16px;font-weight:600">✨ Готовые образы →</a>
+      <a href="wishlist.html" class="card" style="text-align:center;padding:24px;font-size:16px;font-weight:600">🛍 Вишлист →</a>
+    </div>
+  </div>
+</div>
+
+<footer><div class="container">Marina Mart · 2026 · Сделано с любовью</div></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

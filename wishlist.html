@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Вишлист — Marina Mart</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="container">
+  <a href="index.html" class="logo">marina mart <span>✦ гардероб</span></a>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="garderob.html">Гардероб</a>
+    <a href="obrazy.html">Образы</a>
+    <a href="wishlist.html" class="active">Вишлист</a>
+    <a href="rules.html">Правила</a>
+  </nav>
+</div></header>
+<div class="container">
+  <h1 style="font-size:24px;font-weight:600;margin:24px 0">🛍 Вишлист</h1>
+  <p style="font-size:15px;color:var(--muted);margin-bottom:20px">Отмечай купленное ✓. Приоритеты: 🔥 Сейчас (зима), Скоро, Потом.</p>
+
+  <div class="section">
+    <div class="filters" id="wishlist-filters" style="margin-bottom:12px">
+      <button class="filter-btn active" data-wish="all">Все</button>
+      <button class="filter-btn" data-wish="high">🔥 Сейчас</button>
+      <button class="filter-btn" data-wish="medium">Скоро</button>
+      <button class="filter-btn" data-wish="low">Потом</button>
+    </div>
+    <div id="wishlist-list"></div>
+  </div>
+
+  
+</div>
+<footer><div class="container">Marina Mart · 2026</div></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

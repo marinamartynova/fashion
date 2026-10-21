@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Гардероб — Marina Mart</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="container">
+  <a href="index.html" class="logo">marina mart <span>✦ гардероб</span></a>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="garderob.html" class="active">Гардероб</a>
+    <a href="obrazy.html">Образы</a>
+    <a href="wishlist.html">Вишлист</a>
+    <a href="rules.html">Правила</a>
+  </nav>
+</div></header>
+<div class="container">
+  <h1 style="font-size:24px;font-weight:600;margin:24px 0">👗 Гардероб</h1>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">Все</button>
+    <button class="filter-btn" data-filter="daily">Ежедневная</button>
+    <button class="filter-btn" data-filter="outerwear">Верхняя одежда</button>
+    <button class="filter-btn" data-filter="summer">Лето</button>
+    <button class="filter-btn" data-filter="shoes">Обувь</button>
+    <button class="filter-btn" data-filter="bags">Сумки</button>
+    <button class="filter-btn" data-filter="accessories">Аксессуары</button>
+    <button class="filter-btn" data-filter="sportswear">Спорт</button>
+    <button class="filter-btn" data-filter="swimwear">Купальники</button>
+  </div>
+  <div class="filters" style="margin-top:4px">
+    <button class="filter-btn active" data-verdict="all">Все оценки</button>
+    <button class="filter-btn" data-verdict="good">✅ Любимые</button>
+    <button class="filter-btn" data-verdict="maybe">❗ Надо обыгрывать</button>
+    <button class="filter-btn" data-verdict="bad">❌ Не моё</button>
+  </div>
+
+  <div class="card-grid" id="wardrobe-grid"></div>
+</div>
+<footer><div class="container">Marina Mart · 2026</div></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
